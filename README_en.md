@@ -3,6 +3,8 @@
 [![Google Apps Script](https://img.shields.io/badge/Google%20Apps%20Script-4285F4?style=flat-square&logo=google&logoColor=white)](https://developers.google.com/apps-script)
 [![Survival DX](https://img.shields.io/badge/Survival_DX-Optimization-ff69b4?style=flat-square)](https://note.com/masa_cloud)
 
+![](overview_en)
+
 A Google Apps Script (GAS) that detects weather hazards (severe heat, strong wind, rain) and automatically calculates the optimal transportation mode and travel time to your scheduled events, adding them directly to your Google Calendar.
 
 V4 breaks free from Google Maps Directions API dependencies by implementing the **Haversine formula** and **latitude/longitude caching**. This completely bypasses API quota limits, evolving into a blazing-fast script that processes 30 days of schedules in just a few seconds.
