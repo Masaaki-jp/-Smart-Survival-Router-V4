@@ -1,6 +1,6 @@
 # -Smart-Survival-Router-V4
 
-![info](overview.png)
+![](overview_jp.png)
 
 # 🌩️ Smart Survival Router V4
 
