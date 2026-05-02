@@ -3,7 +3,7 @@
 [![Google Apps Script](https://img.shields.io/badge/Google%20Apps%20Script-4285F4?style=flat-square&logo=google&logoColor=white)](https://developers.google.com/apps-script)
 [![Survival DX](https://img.shields.io/badge/Survival_DX-Optimization-ff69b4?style=flat-square)](https://note.com/masa_cloud)
 
-![](overview_en)
+![](overview_en.png)
 
 A Google Apps Script (GAS) that detects weather hazards (severe heat, strong wind, rain) and automatically calculates the optimal transportation mode and travel time to your scheduled events, adding them directly to your Google Calendar.
 
