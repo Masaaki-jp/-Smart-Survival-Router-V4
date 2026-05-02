@@ -38,7 +38,37 @@ Googleカレンダー、またはGoogle Driveから新しい Google Apps Script 
 コード上部の定数（1. 設定部分）をご自身の環境に合わせて変更してください。
 
 ```javascript
-const HOME_ADDRESS = '神奈川県川崎市中原区下新城2-3-26'; // あなたの自宅・拠点の住所
+const HOME_ADDRESS = 'Enter_Your_Address'; // あなたの自宅・拠点の住所
 const BUFFER_MINUTES = 5; // 到着余裕時間（分）
 const WEATHER_CALENDAR_ID = 'あなたの天気連携用カレンダーID@group.calendar.google.com';
 const DAYS_TO_CHECK = 30; // 何日先まで計算するか
+```
+
+### 4. トリガーの設定
+気象ハザードの変動にリアルタイムに対応するため、トリガーを設定します。GASエディタ左側の「時計アイコン（トリガー）」から以下のように追加してください。
+
+実行する関数: automateHazardAwareTravelSchedule
+
+イベントのソース: 時間主導型
+
+トリガーのタイプ: 分ベースのタイマー
+
+時間の間隔: 5分おき
+
+(※API制限を回避するアーキテクチャのため、無料アカウントでも5分間隔で問題なく動作します)
+
+⚠️ 注意事項
+本スクリプトは、事前に気象情報を取り込んだ専用のGoogleカレンダー（WEATHER_CALENDAR_ID）が存在することを前提としています。
+
+距離計算はハバーシンの公式による「概算」であり、実際の地形や道路状況（山道、川を越える橋の有無など）によっては実際の移動時間と誤差が生じる場合があります。
+
+🧑‍💻 Author
+Hack Ninja (Masaaki Itoh)
+
+Note: https://note.com/masa_cloud
+
+YouTube: Hack Ninja
+
+GitHub: Masaaki-jp
+
+このプロジェクトは、低コストなハードウェアとクラウド資源を組み合わせ、ハイパフォーマンスな結果を生み出す「Survival DX」の理念に基づいて開発されています。
